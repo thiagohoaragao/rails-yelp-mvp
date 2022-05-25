@@ -11,6 +11,10 @@
   </head>
 
   <body>
+  <nav class="navbar navbar-light bg-light">
+  <%= link_to 'Home Page', restaurants_path, class: 'btn btn-safe'%>
+  <%= link_to 'Add a new Restaurant',  new_restaurant_path, class: 'btn btn-safe' %>
+</nav>
     <%= yield %>
   </body>
 </html>

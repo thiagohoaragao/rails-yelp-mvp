@@ -25,12 +25,10 @@
   <% @reviews.each do |review| %>
     <li>
       <%= review.content %> <%= review.rating %>
-      <%= link_to 'remove', review_path(review), method: :delete, data: {confirm: 'Are you sure?'} %>
-    </li>
+      </li>
   <% end %>
 </ul>
 
 
 <%= link_to 'Leave a Review', new_restaurant_review_path(@restaurant) %>
-<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>
